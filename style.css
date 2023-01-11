@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Red Hat Display', sans-serif;
+}
+/* Mobile Screen */
+body {
+    background-image: url('images/pattern-background-mobile.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 375px;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 115vh;
+}
+main {
+    max-width: 90%;
+    height: 100vh;
+    background-image: url(images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px #c4bfbf;
+    background-size: contain;
+    padding: 0em 2em;
+    align-items: center;
+}
+main .content-sec {
+    padding-top: 10em;
+    text-align: center;
+}
+main .content-sec h1 {
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+main .content-sec p {
+    color: hsl(224, 23%, 55%);
+    padding: 1em 0em;
+    line-height: 1.7;
+}
+main .plan-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: 100%;
+    align-items: center;
+    background-color: hsl(225deg 100% 96%);
+    padding: 0.7em;
+    height: 15vh;
+    border-radius: 10px;
+}
+main .plan-section > img {
+    padding-right: 1em;
+}
+main .plan-section .price-box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+main .plan-section .price-box .name {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+main .plan-section .price-box .offer {
+    color: hsl(224, 23%, 55%);
+}
+main .plan-section > a {
+    font-weight: 900;
+    font-size: .8rem;
+}
+main .plan-section > a:hover {
+    color: hsla(245, 75%, 52%, 0.719);
+    transition: 0.5s;
+}
+.button-sec {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    height: 18vh;
+    justify-content: space-between;
+}
+.button-sec button {
+    min-width: 100%;
+    height: 8vh;
+    border-radius: 15px;
+    border: 0;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 94%);
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0px 1px 5px #000;
+    cursor: pointer;
+}
+.button-sec button:hover {
+    background-color: hsla(245, 75%, 52%, 0.719);
+    transition: 0.5s;
+}
+.button-sec > a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    padding: 0em 0em;
+    font-weight: 900;
+}
+.button-sec > a:hover {
+    color: hsl(223, 47%, 23%);
+    transition: 0.5s;
+}
+footer {
+    text-align: center;
+    padding: 0em 4em ;
+}
+footer > a {
+    color: hsl(163deg 97% 41%);
+}
+/* Desktop Screen */
+@media(min-width: 799px) {
+    body {
+        width: 1440px;
+        height: 150vh;
+        background-image: url('images/pattern-background-desktop.svg');
+        background-size: contain;
+    }
+    main {
+        max-width: 30%;
+        min-height: 130vh;
+        padding: 2em 3em;
+    }
+}
